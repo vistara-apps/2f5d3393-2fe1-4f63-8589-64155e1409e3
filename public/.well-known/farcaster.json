@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "ChronoCanvas",
+    "subtitle": "Built with Zara",
+    "description": "ChronoCanvas is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app",
+    "splashImageUrl": "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app/image.png",
+    "tagline": "ChronoCanvas",
+    "screenshotUrls": [
+      "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app/screenshot.png",
+      "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://2f5d33932fe14f63858964155e1409e3-9k1n.vercel.app/api/webhook"
+  }
+}

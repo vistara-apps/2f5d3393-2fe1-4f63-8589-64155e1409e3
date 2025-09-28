@@ -1,0 +1,14 @@
+{
+  "name": "ChronoCanvas",
+  "description": "ChronoCanvas is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://2f5d3393-2fe1-4f63-8589-64155e1409e3.vercel.app",
+  "properties": {
+    "app": {
+      "name": "ChronoCanvas",
+      "description": "ChronoCanvas is a Base Mini App built with Zara.",
+      "url": "https://2f5d3393-2fe1-4f63-8589-64155e1409e3.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
