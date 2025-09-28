@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ChronoCanvas Professional Finance Theme */
+  --color-bg: 15 23 42; /* slate-900 */
+  --color-fg: 248 250 252; /* slate-50 */
+  --color-accent: 255 215 0; /* gold */
+  --color-surface: 30 41 59; /* slate-800 */
+  --color-text-primary: 248 250 252; /* slate-50 */
+  --color-text-secondary: 203 213 225; /* slate-300 */
+  --color-primary: 240 90% 50%; /* blue-600 */
+  --color-secondary: 170 70% 45%; /* teal-500 */
+}
+
+[data-theme="celo"] {
+  --color-bg: 0 0 0;
+  --color-fg: 255 255 255;
+  --color-accent: 251 204 92;
+  --color-surface: 23 23 23;
+  --color-text-primary: 255 255 255;
+  --color-text-secondary: 163 163 163;
+  --color-primary: 251 204 92;
+  --color-secondary: 251 204 92;
+}
+
+[data-theme="solana"] {
+  --color-bg: 30 20 60;
+  --color-fg: 255 255 255;
+  --color-accent: 220 38 127;
+  --color-surface: 45 30 80;
+  --color-text-primary: 255 255 255;
+  --color-text-secondary: 200 180 255;
+  --color-primary: 147 51 234;
+  --color-secondary: 220 38 127;
+}
+
+[data-theme="base"] {
+  --color-bg: 15 23 42;
+  --color-fg: 248 250 252;
+  --color-accent: 0 82 255;
+  --color-surface: 30 41 59;
+  --color-text-primary: 248 250 252;
+  --color-text-secondary: 148 163 184;
+  --color-primary: 0 82 255;
+  --color-secondary: 59 130 246;
+}
+
+[data-theme="coinbase"] {
+  --color-bg: 13 17 28;
+  --color-fg: 248 250 252;
+  --color-accent: 0 82 255;
+  --color-surface: 20 25 40;
+  --color-text-primary: 248 250 252;
+  --color-text-secondary: 148 163 184;
+  --color-primary: 0 82 255;
+  --color-secondary: 59 130 246;
+}
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-primary;
+  }
+
+  p {
+    @apply text-text-secondary;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-sm border border-accent/20 rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent to-accent/80 text-bg px-6 py-3 rounded-lg font-semibold hover:from-accent/90 hover:to-accent/70 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-surface border border-accent/30 text-text-primary px-6 py-3 rounded-lg font-medium hover:bg-surface/80 hover:border-accent/50 transition-all duration-200;
+  }
+
+  .metric-card {
+    @apply glass-card p-6 hover:bg-surface/90 transition-all duration-200;
+  }
+
+  .asset-card {
+    @apply glass-card p-4 hover:bg-surface/90 hover:border-accent/40 transition-all duration-200 cursor-pointer;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-2 px-4 py-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-surface/50 transition-all duration-200;
+  }
+
+  .nav-item.active {
+    @apply text-accent bg-accent/10 border border-accent/20;
+  }
+
+  .progress-bar {
+    @apply w-full bg-surface rounded-full h-2;
+  }
+
+  .progress-fill {
+    @apply bg-gradient-to-r from-accent to-accent/80 h-2 rounded-full transition-all duration-300;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .status-pending {
+    @apply bg-yellow-500/20 text-yellow-400 border border-yellow-500/30;
+  }
+
+  .status-confirmed {
+    @apply bg-green-500/20 text-green-400 border border-green-500/30;
+  }
+
+  .status-error {
+    @apply bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent;
+  }
+
+  .border-gradient {
+    background: linear-gradient(rgb(var(--color-surface)), rgb(var(--color-surface))) padding-box,
+                linear-gradient(45deg, rgb(var(--color-accent)), rgb(var(--color-accent) / 0.3)) border-box;
+    border: 1px solid transparent;
+  }
+}
